@@ -17,6 +17,9 @@ include 'data.php';
 <div class="container">
     <!-- Intestazione -->
     <h1>PHP HOTEL</h1>
+
+    <!-- Form di filtro per parcheggio, voto e distanza dal centro -->
+    <?php include 'filter-form.php'; ?>
     
     <!-- Tabella degli hotel filtrati -->
     <?php include 'hotel-table.php'; ?>
