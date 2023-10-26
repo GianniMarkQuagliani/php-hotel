@@ -14,6 +14,12 @@ include 'data.php';
     <title>Document</title>
 </head>
 <body>
-
+<div class="container">
+    <!-- Intestazione -->
+    <h1>PHP HOTEL</h1>
+    
+    <!-- Tabella degli hotel filtrati -->
+    <?php include 'hotel-table.php'; ?>
+</div>
 </body>
 </html>
