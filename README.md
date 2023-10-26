@@ -6,13 +6,21 @@
 
   - Include data.php per ottenere l'array degli hotel e applicare i filtri.
 
-  - Includi hotel-table.php per visualizzare la tabella degli hotel filtrati.
+  - Include hotel-table.php per visualizzare la tabella degli hotel filtrati.
+
+  - Include hotel-table.php per visualizzare la tabella degli hotel filtrati.
+
+  - Utilizza gli array di hotel filtrati per mostrare solo gli hotel che soddisfano i criteri specificati nel form.
+
 
 
 2) Data.php (Gestione dei dati):
   - è un file chiamato data.php per gestire i dati relativi agli hotel. Questo file contiene l'array $hotels con le informazioni sugli hotel.
 
   - Il file data.php è incluso nel file principale index.php utilizzando l'istruzione include. In questo modo, tutte le informazioni sugli hotel sono disponibili in index.php.
+
+
+
 
 3) hotel-table.php (Tabella degli Hotel):
 
@@ -21,3 +29,14 @@
   - Questo file contiene la struttura HTML per la tabella, nonché un ciclo foreach per scorrere l'array degli hotel e visualizzarli nella tabella.
 
   - Ancora una volta, hotel-table.php è incluso in index.php per mostrare la tabella degli hotel sulla pagina.
+
+
+
+
+4) filter-form.php (Form di Filtraggio):
+
+  - Creo un file chiamato filter-form.php che contiene il form di filtraggio.
+
+  - Questo form include campi per il filtraggio basato su parcheggio, voto e distanza dal centro. È possibile inserire valori in questi campi e fare clic su "Filtra" per inviare il modulo.
+
+  - Anche filter-form.php è incluso in index.php utilizzando l'istruzione include. Questo inserisce il form di filtraggio nella pagina principale.

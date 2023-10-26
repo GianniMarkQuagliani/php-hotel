@@ -1,4 +1,5 @@
 <?php
+// hotels
 $hotels = [
     [
         'name' => 'Hotel Belvedere',
@@ -36,4 +37,24 @@ $hotels = [
         'distance_to_center' => 50
     ],
 ];
+
+
+// Filtro per parcheggio
+if (isset($_GET['parking'])) {
+    $hotels = array_filter($hotels, function ($hotel) {
+        return $hotel['parking'] == true;
+    });
+}
+// Filtro per voto
+if (isset($_GET['vote']) && is_numeric($_GET['vote'])) {
+    $hotels = array_filter($hotels, function ($hotel) {
+        return $hotel['vote'] >= $_GET['vote'];
+    });
+}
+// Filtro per distanza dal centro
+if (isset($_GET['distance_to_center']) && is_numeric($_GET['distance_to_center'])) {
+    $hotels = array_filter($hotels, function ($hotel) {
+        return $hotel['distance_to_center'] >= $_GET['distance_to_center'];
+    });
+}
 ?>

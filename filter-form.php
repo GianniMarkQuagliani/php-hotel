@@ -1,3 +1,5 @@
+<!-- creo il form  --->
+
 <form action="index.php" method="GET">
     <div class="mb-3">
         <label for="parking" class="form-label">Filtro Parcheggio:</label>
