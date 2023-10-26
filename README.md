@@ -40,3 +40,9 @@
   - Questo form include campi per il filtraggio basato su parcheggio, voto e distanza dal centro. È possibile inserire valori in questi campi e fare clic su "Filtra" per inviare il modulo.
 
   - Anche filter-form.php è incluso in index.php utilizzando l'istruzione include. Questo inserisce il form di filtraggio nella pagina principale.
+
+  - Se il parametro "parking" è presente nell'URL GET, la casella di controllo verrà selezionata usando <?php if (isset($_GET['parking'])) echo 'checked'; ?>, in modo che rimanga selezionata quando la pagina viene ricaricata.
+
+  - Se il parametro "vote" è presente nell'URL GET, il campo verrà precompilato con il valore corrispondente usando value="<?php echo isset($_GET['vote']) ? $_GET['vote'] : ''; ?>".
+
+  - Se il parametro "distance_to_center" è presente nell'URL GET, il campo verrà precompilato con il valore corrispondente usando value="<?php echo isset($_GET['distance_to_center']) ? $_GET['distance_to_center'] : ''; ?>".
